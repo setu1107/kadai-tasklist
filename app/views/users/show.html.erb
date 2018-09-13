@@ -22,8 +22,8 @@
 <%= 'active' if current_page?(user_path(@user)) %>
 ">
 <%= link_to user_path(@user) do %>
-Microposts <span clas="badge">
-<%= @count_microposts %>
+tasks <span clas="badge">
+<%= @count_tasks %>
 </span>
 <% end %>
 </li>
@@ -31,7 +31,7 @@ Microposts <span clas="badge">
       <li><a href="#">Followerss</a></li>
     </ul>
     
-<%= render 'microposts/microposts', microposts: @microposts %>
+<%= render 'tasks/tasks', tasks: @tasks %>
 
   </div>
 </div>
