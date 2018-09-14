@@ -8,9 +8,6 @@ Rails.application.routes.draw do
   
   get 'signup', to: 'users#new'
   
-  post 'login', to: 'sessions#create'
-  post 'signin', to: 'sessions#new'
-  
   
   resources :tasks
   
